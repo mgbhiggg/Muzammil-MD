@@ -14,6 +14,8 @@ WORKDIR /root/bmwmd/
 
 
 COPY package.json .
+RUN npm install
+RUN yarn install 
 RUN npm install pm2 -g
 RUN npm install --legacy-peer-deps
 
